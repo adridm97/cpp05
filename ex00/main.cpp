@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:57 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/18 11:25:27 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 18:59:29 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@ int main()
         Bureaucrat b1("Adri", 1);
         std::cout << b1 << std::endl;
         b1.getGrade();
-        Bureaucrat b2("Cris", 150);
-        b2.incrementGrade();
+        Bureaucrat b2("Cris", 149);
+        std::cout << b2 << std::endl;
+        b2.decrementGrade();
         std::cout << "After increment: " << b2 << std:: endl;
     }
     catch(const Bureaucrat::GradeToHighException &e)
@@ -38,8 +39,7 @@ int main()
     try
     {
         Bureaucrat b3("Pedro", 70);
-        std::cout << b3.getName() << std::endl;
-        std::cout << b3.getGrade() << std::endl;
+        std::cout << b3 << std::endl;
     }
     catch(const Bureaucrat::GradeToHighException &e)
     {

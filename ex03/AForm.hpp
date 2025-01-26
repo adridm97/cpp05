@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AForm.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 12:08:01 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/20 19:32:58 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:08:59 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ class AForm
 		AForm(const AForm &other);
 		AForm &operator=(const AForm &other);
 		virtual ~AForm();
-		
 		const std::string &getName() const;
 		bool isSigned() const;
 		int getGradeToSign() const;

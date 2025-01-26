@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 17:21:48 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 17:45:59 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:12:46 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,5 @@ AForm *Intern::makeForm(const std::string &formName, const std::string &target) 
         }
     }
     std::cerr << "Error: Form " << formName << " does not exist." << std::endl;
-    return nullptr;
+    return NULL;
 }

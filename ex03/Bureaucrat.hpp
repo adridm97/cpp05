@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:21 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 16:51:57 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:10:52 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,15 @@ class Bureaucrat
 		Bureaucrat(const Bureaucrat &other);
 		Bureaucrat &operator=(const Bureaucrat &other);
     	~Bureaucrat();
-		//Geters
+		//Getters
 		const	std::string &getName() const;
 		int	getGrade() const;
-		//Metodos
+		//Methods
 		void	incrementGrade();
 		void	decrementGrade();
 		void	signForm(AForm &form) const;
 		void	executeForm(const AForm &form) const;
 };
-
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &b);
 
 #endif

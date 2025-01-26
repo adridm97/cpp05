@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:57 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 17:08:33 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:04:18 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,9 @@ int main()
     try
     {
         Bureaucrat john("John", 10);
-        
         PresidentialPardonForm pardonForm("Alice");
 
         std::cout << pardonForm << std::endl;
-
         john.signForm(pardonForm);
         john.executeForm(pardonForm);
         Bureaucrat cris("Cris", 100);
@@ -44,6 +42,5 @@ int main()
     {
         std::cerr << e.what() << std::endl;
     }
-
     return 0;
 }

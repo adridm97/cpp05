@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:09 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 16:54:26 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:10:29 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 const char *Bureaucrat::GradeToHighException::what() const throw()
 {
-    return ("Grade is to high! Maximum grade is 1.");
+    return ("Grade is too high! Maximum grade is 1.");
 }
 const char *Bureaucrat::GradeToLowException::what() const throw()
 {
-    return ("Grade is to low! Minimum grade is 150.");
+    return ("Grade is too low! Minimum grade is 150.");
 }
 Bureaucrat::Bureaucrat(){}
 Bureaucrat::Bureaucrat(const std::string &name, int grade) : _name(name), _grade(grade)
@@ -45,7 +45,7 @@ int Bureaucrat::getGrade() const
 {
     return (_grade);
 }
-//Metodos
+//Methods
 void Bureaucrat::incrementGrade()
 {
     if (_grade <= 1)
@@ -76,9 +76,7 @@ void Bureaucrat::signForm(AForm &f) const
         }
     }
     else
-    {
         std::cout << _name << " couldn't sign " << f.getName() << " because it is already signed." << std::endl;
-    }
 }
 
 void Bureaucrat::executeForm(const AForm &form) const

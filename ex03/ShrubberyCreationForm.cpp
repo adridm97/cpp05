@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ShrubberyCreationForm.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:42:47 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 16:59:22 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:11:57 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ void ShrubberyCreationForm::execute(const Bureaucrat &executor) const
     file << "     *********\n";
     file << "    ***********\n";
     file << "   *************\n";
-    file << "         |||\n";
-    file << "         |||\n";
-    file << "         |||\n";
+    file << "        |||\n";
+    file << "        |||\n";
+    file << "        |||\n";
     file.close();
 }

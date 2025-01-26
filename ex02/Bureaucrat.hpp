@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:21 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 16:51:57 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:04:01 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ class Bureaucrat
 		void	signForm(AForm &form) const;
 		void	executeForm(const AForm &form) const;
 };
-
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &b);
 
 #endif

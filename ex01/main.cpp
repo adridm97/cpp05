@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:57 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/20 18:41:35 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:02:06 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int main()
     {
         Bureaucrat b1("Adri", 1);
         std::cout << b1 << std::endl;
-        b1.getGrade();
         Bureaucrat b2("Cris", 150);
+        std::cout << b2 << std::endl;
         b2.incrementGrade();
         std::cout << "After increment: " << b2 << std:: endl;
         Form f1("Formulario 1", 10, 3);

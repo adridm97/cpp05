@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:09 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 16:54:26 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:03:44 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 const char *Bureaucrat::GradeToHighException::what() const throw()
 {
-    return ("Grade is to high! Maximum grade is 1.");
+    return ("Grade is too high! Maximum grade is 1.");
 }
 const char *Bureaucrat::GradeToLowException::what() const throw()
 {
-    return ("Grade is to low! Minimum grade is 150.");
+    return ("Grade is too low! Minimum grade is 150.");
 }
 Bureaucrat::Bureaucrat(){}
 Bureaucrat::Bureaucrat(const std::string &name, int grade) : _name(name), _grade(grade)

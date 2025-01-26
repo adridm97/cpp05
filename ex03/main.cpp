@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 18:14:57 by adrian            #+#    #+#             */
-/*   Updated: 2025/01/26 17:44:22 by adrian           ###   ########.fr       */
+/*   Updated: 2025/01/26 19:11:16 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main()
         delete form;
     }
     else
-    std::cerr << "Form creation failed!" << std::endl;
+        std::cerr << "Form creation failed!" << std::endl;
     form = someRandomIntern.makeForm("shrubbery creation", "Garden");
     if (form)
         delete form;
